@@ -1,7 +1,13 @@
 import { Config } from '@stencil/core';
+import { sass } from '@stencil/sass';
+import path from 'path';
+
+const globalStyle = path.resolve('../pure-themes/lib/default/index.css');
 
 export const config: Config = {
-  namespace: 'pure-ui',
+  namespace: 'pure-components',
+  devServer: { openBrowser: false },
+  globalStyle,
   outputTargets: [
     {
       type: 'dist',
@@ -19,6 +25,7 @@ export const config: Config = {
     },
   ],
   testing: {
-    browserHeadless: "new",
+    browserHeadless: 'new',
   },
+  plugins: [sass()],
 };

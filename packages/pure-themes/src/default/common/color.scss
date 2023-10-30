@@ -1,0 +1,329 @@
+@use 'sass:color';
+
+/* base -------------------------- */
+$color-red-base: #f52727;
+$color-orange-base: #fa721b;
+$color-brown-base: #fdaa1d;
+$color-yellow-base: #f8d81a;
+$color-canary-base: #fcd200;
+$color-bud-base: #8dd118;
+$color-green-base: #39c317;
+$color-turquoise-base: #20cc94;
+$color-cyan-base: #19d2db;
+$color-glacier-base: #1ba0f2;
+$color-blue-base: #1c6eff;
+$color-indigo-base: #2229f6;
+$color-purple-base: #7824ff;
+$color-magenta-base: #d619be;
+
+/* Graphite  -------------------------- */
+$color-graphite-base: #a1a7b3;
+$color-graphite-l50: #f7f9fc;
+$color-graphite-l40: #edf1f7;
+$color-graphite-l30: #e1e5eb;
+$color-graphite-l20: #d3d7de;
+$color-graphite-l10: #bec3cc;
+$color-graphite: $color-graphite-base;
+$color-graphite-d10: #6f7785;
+$color-graphite-d20: #5e6573;
+$color-graphite-d30: #454c59;
+$color-graphite-d40: #2f3540;
+$color-graphite-d50: #1e232b;
+
+/* Grey -------------------------- */
+$color-grey-base: #a3a3a3;
+$color-grey-l50: #fafafa;
+$color-grey-l40: #f5f5f5;
+$color-grey-l30: #eeeeee;
+$color-grey-l20: #e0e0e0;
+$color-grey-l10: #c2c2c2;
+$color-grey: $color-grey-base;
+$color-grey-d10: #7a7a7a;
+$color-grey-d20: #5c5c5c;
+$color-grey-d30: #3d3d3d;
+$color-grey-d40: #1f1f1f;
+$color-grey-d50: #141414;
+
+/* Black -------------------------- */
+$color-black: #000000;
+
+/* white -------------------------- */
+$color-white: #ffffff;
+
+/* Red -------------------------- */
+$color-red-l50: lighten($color-red-base, 50%);
+$color-red-l40: lighten($color-red-base, 40%);
+$color-red-l30: lighten($color-red-base, 30%);
+$color-red-l20: lighten($color-red-base, 20%);
+$color-red-l10: lighten($color-red-base, 10%);
+$color-red: $color-red-base;
+$color-red-d10: darken($color-red-base, 10);
+$color-red-d20: darken($color-red-base, 20);
+$color-red-d30: darken($color-red-base, 30);
+$color-red-d40: darken($color-red-base, 40);
+
+/* Orange -------------------------- */
+$color-orange-l50: lighten($color-orange-base, 50);
+$color-orange-l40: lighten($color-orange-base, 40);
+$color-orange-l30: lighten($color-orange-base, 30);
+$color-orange-l20: lighten($color-orange-base, 20);
+$color-orange-l10: lighten($color-orange-base, 10);
+$color-orange: $color-orange-base;
+$color-orange-d10: darken($color-orange-base, 10);
+$color-orange-d20: darken($color-orange-base, 20);
+$color-orange-d30: darken($color-orange-base, 30);
+$color-orange-d40: darken($color-orange-base, 40);
+
+/* Brown -------------------------- */
+$color-brown-l50: lighten($color-brown-base, 50);
+$color-brown-l40: lighten($color-brown-base, 40);
+$color-brown-l30: lighten($color-brown-base, 30);
+$color-brown-l20: lighten($color-brown-base, 20);
+$color-brown-l10: lighten($color-brown-base, 10);
+$color-brown: $color-brown-base;
+$color-brown-d10: darken($color-brown-base, 10);
+$color-brown-d20: darken($color-brown-base, 20);
+$color-brown-d30: darken($color-brown-base, 30);
+$color-brown-d40: darken($color-brown-base, 40);
+
+/* Yellow -------------------------- */
+$color-yellow-l50: lighten($color-yellow-base, 50);
+$color-yellow-l40: lighten($color-yellow-base, 40);
+$color-yellow-l30: lighten($color-yellow-base, 30);
+$color-yellow-l20: lighten($color-yellow-base, 20);
+$color-yellow-l10: lighten($color-yellow-base, 10);
+$color-yellow: $color-yellow-base;
+$color-yellow-d10: darken($color-yellow-base, 10);
+$color-yellow-d20: darken($color-yellow-base, 20);
+$color-yellow-d30: darken($color-yellow-base, 30);
+$color-yellow-d40: darken($color-yellow-base, 40);
+
+/* Canary -------------------------- */
+$color-canary-l50: lighten($color-canary-base, 50);
+$color-canary-l40: lighten($color-canary-base, 40);
+$color-canary-l30: lighten($color-canary-base, 30);
+$color-canary-l20: lighten($color-canary-base, 20);
+$color-canary-l10: lighten($color-canary-base, 10);
+$color-canary: $color-canary-base;
+$color-canary-d10: darken($color-canary-base, 10);
+$color-canary-d20: darken($color-canary-base, 20);
+$color-canary-d30: darken($color-canary-base, 30);
+$color-canary-d40: darken($color-canary-base, 40);
+
+/* Bud -------------------------- */
+$color-bud-l50: lighten($color-bud-base, 50);
+$color-bud-l40: lighten($color-bud-base, 40);
+$color-bud-l30: lighten($color-bud-base, 30);
+$color-bud-l20: lighten($color-bud-base, 20);
+$color-bud-l10: lighten($color-bud-base, 10);
+$color-bud: $color-bud-base;
+$color-bud-d10: darken($color-bud-base, 10);
+$color-bud-d20: darken($color-bud-base, 20);
+$color-bud-d30: darken($color-bud-base, 30);
+$color-bud-d40: darken($color-bud-base, 40);
+
+/* Green -------------------------- */
+$color-green-l50: lighten($color-green-base, 50);
+$color-green-l40: lighten($color-green-base, 40);
+$color-green-l30: lighten($color-green-base, 30);
+$color-green-l20: lighten($color-green-base, 20);
+$color-green-l10: lighten($color-green-base, 10);
+$color-green: $color-green-base;
+$color-green-d10: darken($color-green-base, 10);
+$color-green-d20: darken($color-green-base, 20);
+$color-green-d30: darken($color-green-base, 30);
+$color-green-d40: darken($color-green-base, 40);
+
+/* Turquoise -------------------------- */
+$color-turquoise-l50: lighten($color-turquoise-base, 50);
+$color-turquoise-l40: lighten($color-turquoise-base, 40);
+$color-turquoise-l30: lighten($color-turquoise-base, 30);
+$color-turquoise-l20: lighten($color-turquoise-base, 20);
+$color-turquoise-l10: lighten($color-turquoise-base, 10);
+$color-turquoise: $color-turquoise-base;
+$color-turquoise-d10: darken($color-turquoise-base, 10);
+$color-turquoise-d20: darken($color-turquoise-base, 20);
+$color-turquoise-d30: darken($color-turquoise-base, 30);
+$color-turquoise-d40: darken($color-turquoise-base, 40);
+
+/* Cyan -------------------------- */
+$color-cyan-l50: lighten($color-cyan-base, 50);
+$color-cyan-l40: lighten($color-cyan-base, 40);
+$color-cyan-l30: lighten($color-cyan-base, 30);
+$color-cyan-l20: lighten($color-cyan-base, 20);
+$color-cyan-l10: lighten($color-cyan-base, 10);
+$color-cyan: $color-cyan-base;
+$color-cyan-d10: darken($color-cyan-base, 10);
+$color-cyan-d20: darken($color-cyan-base, 20);
+$color-cyan-d30: darken($color-cyan-base, 30);
+$color-cyan-d40: darken($color-cyan-base, 40);
+
+/* Glacier -------------------------- */
+$color-glacier-l50: lighten($color-glacier-base, 50);
+$color-glacier-l40: lighten($color-glacier-base, 40);
+$color-glacier-l30: lighten($color-glacier-base, 30);
+$color-glacier-l20: lighten($color-glacier-base, 20);
+$color-glacier-l10: lighten($color-glacier-base, 10);
+$color-glacier: $color-glacier-base;
+$color-glacier-d10: darken($color-glacier-base, 10);
+$color-glacier-d20: darken($color-glacier-base, 20);
+$color-glacier-d30: darken($color-glacier-base, 30);
+$color-glacier-d40: darken($color-glacier-base, 40);
+
+/* Blue -------------------------- */
+$color-blue-l50: lighten($color-blue-base, 50);
+$color-blue-l40: lighten($color-blue-base, 40);
+$color-blue-l30: lighten($color-blue-base, 30);
+$color-blue-l20: lighten($color-blue-base, 20);
+$color-blue-l10: lighten($color-blue-base, 10);
+$color-blue: $color-blue-base;
+$color-blue-d10: darken($color-blue-base, 10);
+$color-blue-d20: darken($color-blue-base, 20);
+$color-blue-d30: darken($color-blue-base, 30);
+$color-blue-d40: darken($color-blue-base, 40);
+
+/* Indigo -------------------------- */
+$color-indigo-l50: lighten($color-indigo-base, 50);
+$color-indigo-l40: lighten($color-indigo-base, 40);
+$color-indigo-l30: lighten($color-indigo-base, 30);
+$color-indigo-l20: lighten($color-indigo-base, 20);
+$color-indigo-l10: lighten($color-indigo-base, 10);
+$color-indigo: $color-indigo-base;
+$color-indigo-d10: darken($color-indigo-base, 10);
+$color-indigo-d20: darken($color-indigo-base, 20);
+$color-indigo-d30: darken($color-indigo-base, 30);
+$color-indigo-d40: darken($color-indigo-base, 40);
+
+/* Purple -------------------------- */
+$color-purple-l50: lighten($color-purple-base, 50);
+$color-purple-l40: lighten($color-purple-base, 40);
+$color-purple-l30: lighten($color-purple-base, 30);
+$color-purple-l20: lighten($color-purple-base, 20);
+$color-purple-l10: lighten($color-purple-base, 10);
+$color-purple: $color-purple-base;
+$color-purple-d10: darken($color-purple-base, 10);
+$color-purple-d20: darken($color-purple-base, 20);
+$color-purple-d30: darken($color-purple-base, 30);
+$color-purple-d40: darken($color-purple-base, 40);
+
+/* Magenta -------------------------- */
+$color-magenta-l50: lighten($color-magenta-base, 50);
+$color-magenta-l40: lighten($color-magenta-base, 40);
+$color-magenta-l30: lighten($color-magenta-base, 30);
+$color-magenta-l20: lighten($color-magenta-base, 20);
+$color-magenta-l10: lighten($color-magenta-base, 10);
+$color-magenta: $color-magenta-base;
+$color-magenta-d10: darken($color-magenta-base, 10);
+$color-magenta-d20: darken($color-magenta-base, 20);
+$color-magenta-d30: darken($color-magenta-base, 30);
+$color-magenta-d40: darken($color-magenta-base, 40);
+
+/* Primary -------------------------- */
+$color-primary-base: $color-blue-base;
+$color-primary-l50: lighten($color-primary-base, 50);
+$color-primary-l40: lighten($color-primary-base, 40);
+$color-primary-l30: lighten($color-primary-base, 30);
+$color-primary-l20: lighten($color-primary-base, 20);
+$color-primary-l10: lighten($color-primary-base, 10);
+$color-primary: $color-primary-base;
+$color-primary-d10: darken($color-primary-base, 10);
+$color-primary-d20: darken($color-primary-base, 20);
+$color-primary-d30: darken($color-primary-base, 30);
+$color-primary-d40: darken($color-primary-base, 40);
+
+/* Info -------------------------- */
+$color-info-base: $color-primary-base;
+$color-info-l50: lighten($color-info-base, 50);
+$color-info-l40: lighten($color-info-base, 40);
+$color-info-l30: lighten($color-info-base, 30);
+$color-info-l20: lighten($color-info-base, 20);
+$color-info-l10: lighten($color-info-base, 10);
+$color-info: $color-info-base;
+$color-info-d10: darken($color-info-base, 10);
+$color-info-d20: darken($color-info-base, 20);
+$color-info-d30: darken($color-info-base, 30);
+$color-info-d40: darken($color-info-base, 40);
+
+/* Pending -------------------------- */
+$color-pending-base: $color-primary-base;
+$color-pending-l50: lighten($color-pending-base, 50);
+$color-pending-l40: lighten($color-pending-base, 40);
+$color-pending-l30: lighten($color-pending-base, 30);
+$color-pending-l20: lighten($color-pending-base, 20);
+$color-pending-l10: lighten($color-pending-base, 10);
+$color-pending: $color-pending-base;
+$color-pending-d10: darken($color-pending-base, 10);
+$color-pending-d20: darken($color-pending-base, 20);
+$color-pending-d30: darken($color-pending-base, 30);
+$color-pending-d40: darken($color-pending-base, 40);
+
+/* Success -------------------------- */
+$color-success-base: $color-turquoise-base;
+$color-success-l50: lighten($color-success-base, 50);
+$color-success-l40: lighten($color-success-base, 40);
+$color-success-l30: lighten($color-success-base, 30);
+$color-success-l20: lighten($color-success-base, 20);
+$color-success-l10: lighten($color-success-base, 10);
+$color-success: $color-success-base;
+$color-success-d10: darken($color-success-base, 10);
+$color-success-d20: darken($color-success-base, 20);
+$color-success-d30: darken($color-success-base, 30);
+$color-success-d40: darken($color-success-base, 40);
+
+/* Warning -------------------------- */
+$color-warning-base: $color-brown-base;
+$color-warning-l50: lighten($color-warning-base, 50);
+$color-warning-l40: lighten($color-warning-base, 40);
+$color-warning-l30: lighten($color-warning-base, 30);
+$color-warning-l20: lighten($color-warning-base, 20);
+$color-warning-l10: lighten($color-warning-base, 10);
+$color-warning: $color-warning-base;
+$color-warning-d10: darken($color-warning-base, 10);
+$color-warning-d20: darken($color-warning-base, 20);
+$color-warning-d30: darken($color-warning-base, 30);
+$color-warning-d40: darken($color-warning-base, 40);
+
+/* Error -------------------------- */
+$color-error-base: $color-red-base;
+$color-error-l50: lighten($color-error-base, 50);
+$color-error-l40: lighten($color-error-base, 40);
+$color-error-l30: lighten($color-error-base, 30);
+$color-error-l20: lighten($color-error-base, 20);
+$color-error-l10: lighten($color-error-base, 10);
+$color-error: $color-error-base;
+$color-error-d10: darken($color-error-base, 10);
+$color-error-d20: darken($color-error-base, 20);
+$color-error-d30: darken($color-error-base, 30);
+$color-error-d40: darken($color-error-base, 40);
+
+/* color -------------------------- */
+$background-color-base: hsv(0, 0, 95%); // Default grey background color
+$background-color-light: hsv(0, 0, 98%); // background of header and selected item
+$background-color-body: $color-white;
+$background-color-component: $color-white;
+$background-color-component-dark: #191c24;
+
+$background-color-hover-dark: $color-grey-l30;
+$background-color-hover: $color-grey-l40;
+$background-color-hover-light: $color-grey-l50;
+
+$background-color-selected-dark: $color-primary-l30;
+$background-color-selected: $color-primary-l40;
+$background-color-selected-light: $color-primary-l50;
+
+$background-color-disabled: hsv(0, 0, 95%);
+
+// $deprecated
+$disabled-color: $color-graphite-l10;
+$disabled-color-dark: rgba($color-white, 35%);
+$disabled-bg-color: $color-graphite-l40;
+$disabled-border-color: $color-graphite-l20;
+
+/* text -------------------------- */
+$text-color: $color-graphite-d40;
+$text-color-inverse: $color-white;
+$text-color-secondary: rgba($color-black, 45%);
+$text-color-dark: rgba($color-white, 85%);
+$text-color-secondary-dark: rgba($color-white, 65%);
+$text-color-disabled: rgba($color-black, 25%);
+$text-color-disabled-dark: rgba($color-white, 35%);
