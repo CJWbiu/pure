@@ -10,14 +10,117 @@
     <link rel="stylesheet" href="/build/pure-components.css" />
   </head>
   <body>
-    <pu-button type="primary">click</pu-button>
-    <pu-button type="text">click</pu-button>
-    <pu-button type="dashed">click</pu-button>
-    <pu-button type="link">click</pu-button>
+    <p>
+      <pu-button id="allow-click">click</pu-button>
+      <pu-button type="primary">click</pu-button>
+      <pu-button type="text">click</pu-button>
+      <pu-button type="dashed">click</pu-button>
+      <pu-button href="/" type="link">click</pu-button>
+    </p>
 
-    <pu-button type="primary" disabled>click</pu-button>
-    <pu-button type="text" disabled>click</pu-button>
-    <pu-button type="dashed" disabled>click</pu-button>
-    <pu-button type="link" disabled>click</pu-button>
+    <p>
+      <pu-button id="btn" disabled>click</pu-button>
+      <pu-button type="primary" disabled>click</pu-button>
+      <pu-button type="text" disabled>click</pu-button>
+      <pu-button type="dashed" disabled>click</pu-button>
+      <pu-button type="link" disabled>click</pu-button>
+    </p>
+
+    <p>
+      <pu-button size="s">click</pu-button>
+      <pu-button size="s" type="primary">click</pu-button>
+      <pu-button size="s" type="text">click</pu-button>
+      <pu-button size="s" type="dashed">click</pu-button>
+      <pu-button size="s" href="/" type="link">click</pu-button>
+    </p>
+
+    <p>
+      <pu-button danger size="xs">click</pu-button>
+      <pu-button size="xs" type="primary">click</pu-button>
+      <pu-button loading size="xs" type="text">click</pu-button>
+      <pu-button size="xs" type="dashed">click</pu-button>
+      <pu-button size="xs" href="/" type="link">click</pu-button>
+    </p>
+
+    <p>
+      <pu-button size="l">click</pu-button>
+      <pu-button danger size="l" type="primary">click</pu-button>
+      <pu-button loading size="l" type="text">click</pu-button>
+      <pu-button size="l" type="dashed">click</pu-button>
+      <pu-button size="l" href="/" type="link">click</pu-button>
+    </p>
+
+    <p>
+      <pu-button size="xl">click</pu-button>
+      <pu-button size="xl" type="primary">click</pu-button>
+      <pu-button loading size="xl" type="text">click</pu-button>
+      <pu-button danger size="xl" type="dashed">click</pu-button>
+      <pu-button size="xl" href="/" type="link">click</pu-button>
+    </p>
+
+    <p>
+      <pu-button shape="round" size="xl">click</pu-button>
+      <pu-button shape="round" size="xl" type="primary">click</pu-button>
+      <pu-button button shape="round" size="xl" type="text">click</pu-button>
+      <pu-button shape="round" size="xl" type="dashed">click</pu-button>
+      <pu-button danger shape="round" size="xl" href="/" type="link">click</pu-button>
+    </p>
+
+    <p>
+      <pu-button shape="round" size="l">click</pu-button>
+      <pu-button shape="round" size="l" type="primary">click</pu-button>
+      <pu-button shape="round" size="l" type="text">click</pu-button>
+      <pu-button shape="round" size="l" type="dashed">click</pu-button>
+      <pu-button shape="round" size="l" href="/" type="link">click</pu-button>
+    </p>
+
+    <p>
+      <pu-button shape="round" size="xs">click</pu-button>
+      <pu-button shape="round" size="xs" type="primary">click</pu-button>
+      <pu-button shape="round" size="xs" type="text">click</pu-button>
+      <pu-button shape="round" size="xs" type="dashed">click</pu-button>
+      <pu-button shape="round" size="xs" href="/" type="link">click</pu-button>
+    </p>
+
+    <p>
+      <pu-button danger shape="circle">click</pu-button>
+      <pu-button shape="circle" type="primary">click</pu-button>
+      <pu-loading button shape="circle" type="text">click</pu-button>
+      <pu-button shape="circle" type="dashed">click</pu-button>
+      <pu-button shape="circle" href="/" type="link">click</pu-button>
+    </p>
+
+    <p>
+      <pu-button shape="circle" size="xl">click</pu-button>
+      <pu-button shape="circle" size="xl" type="primary">click</pu-button>
+      <pu-button shape="circle" size="xl" type="text">click</pu-button>
+      <pu-button shape="circle" size="xl" type="dashed">click</pu-button>
+      <pu-button shape="circle" size="xl" href="/" type="link">click</pu-button>
+    </p>
+
+    <p>
+      <pu-button shape="circle" size="l">click</pu-button>
+      <pu-button shape="circle" size="l" type="primary">click</pu-button>
+      <pu-button shape="circle" size="l" type="text">click</pu-button>
+      <pu-button shape="circle" size="l" type="dashed">click</pu-button>
+      <pu-button shape="circle" size="l" href="/" type="link">click</pu-button>
+    </p>
+
+    <p style="background: #ddd">
+      <pu-button ghost shape="round" size="xs">click</pu-button>
+      <pu-button ghost shape="round" size="xs" type="primary">click</pu-button>
+      <pu-button ghost danger size="xs" type="text">click</pu-button>
+      <pu-button ghost size="xs" type="dashed">click</pu-button>
+      <pu-button ghost size="xs" href="/" type="link">click</pu-button>
+    </p>
+    <script>
+      document.getElementById('btn').addEventListener('click', () => {
+        console.log('click');
+      })
+
+      document.getElementById('allow-click').addEventListener('click', () => {
+        console.log('click');
+      })
+    </script>
   </body>
 </html>
