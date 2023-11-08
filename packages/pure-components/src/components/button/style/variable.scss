@@ -1,0 +1,47 @@
+$button-font-size-xs: var(--pu-font-size-sm);
+$button-font-size-sm: var(--pu-font-size-md);
+$button-font-size-md: var(--pu-font-size-md);
+$button-font-size-lg: var(--pu-font-size-lg);
+$button-font-size-xl: var(--pu-font-size-xl);
+
+$button-height-xs: var(--pu-height-sm);
+$button-height-sm: var(--pu-height-md);
+$button-height-md: var(--pu-height-md);
+$button-height-lg: var(--pu-height-lg);
+$button-height-xl: var(--pu-height-xl);
+
+$button-padding-xs: 0 var(--pu-spacing-sm);
+$button-padding-sm: 0 var(--pu-spacing-md);
+$button-padding-md: 0 var(--pu-spacing-lg);
+$button-padding-lg: 0 var(--pu-spacing-xl);
+$button-padding-xl: 0 var(--pu-spacing-2xl);
+
+$button-color: var(--pu-text-color);
+$button-color-disabled: var(--pu-text-color-disabled);
+$button-background-color: var(--pu-background-color);
+$button-background-color-disabled: var(--pu-background-color-deep);
+$button-border-color: var(--pu-border-color);
+$button-border-radius: var(--pu-border-radius-md);
+
+$button-primary-color: var(--pu-text-color-inverse);
+$button-primary-background-color: var(--pu-color-primary);
+$button-primary-background-color-hover: var(--pu-color-primary-l10);
+$button-primary-background-color-active: var(--pu-color-primary-d10);
+$button-primary-border-color: $button-primary-background-color;
+$button-primary-border-color-hover: $button-primary-background-color-hover;
+$button-primary-border-color-active: $button-primary-background-color-active;
+
+$button-color-disabled: var(--pu-text-color-disabled);
+$button-background-color-disabled: var(--pu-background-color-deep);
+
+$button-link-color: var(--pu-color-primary);
+
+$button-danger-color: var(--pu-color-red);
+$button-danger-color-hover: var(--pu-color-red-l10);
+$button-danger-color-active: var(--pu-color-red-d10);
+
+$button-ghost-color: var(--pu-text-color-inverse);
+$button-ghost-border-color: var(--pu-background-color);
+$button-ghost-background-color: transparent;
+$button-ghost-background-color-hover: rgba(255, 255, 255, 0.2);
+$button-ghost-background-color-active: var(--pu-background-color);
