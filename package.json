@@ -1,17 +1,17 @@
 {
-  "name": "pure-ui",
+  "name": "@pure-ui/monorepo",
   "version": "0.0.1",
   "packageManager": "pnpm@8.1.1",
-  "description": "Web Component 组件库",
+  "description": "一个基于Web Component的UI组件库",
   "preinstall": "npx only-allow pnpm",
   "scripts": {
     "prepare": "husky install",
     "commit": "git cz",
     "changeset": "changeset",
-    "test:components": "pnpm --filter @pure-ui/components test",
-    "start:components": "pnpm --filter @pure-ui/components start",
+    "dev": "pnpm --filter @pure-ui/docs dev",
+    "build:docs": "pnpm --filter @pure-ui/docs build",
     "build:themes": "pnpm --filter @pure-ui/themes build",
-    "start:themes": "pnpm --filter @pure-ui/themes dev"
+    "dev:themes": "pnpm --filter @pure-ui/themes dev"
   },
   "config": {
     "commitizen": {
@@ -28,7 +28,7 @@
   },
   "keywords": [
     "Web Component",
-    "组件库",
+    "Lit",
     "跨端"
   ],
   "author": {
@@ -47,9 +47,9 @@
     "eslint": "^8.52.0",
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-prettier": "^5.0.1",
-    "eslint-plugin-react": "^7.33.2",
     "husky": "^8.0.3",
     "lint-staged": "^15.0.2",
-    "prettier": "^3.0.3"
+    "prettier": "^3.0.3",
+    "typescript": "^5.2.2"
   }
 }
