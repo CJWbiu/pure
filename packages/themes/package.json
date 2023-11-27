@@ -8,7 +8,11 @@
   },
   "keywords": [
     "theme",
-    "pure-ui"
+    "pure-ui",
+    "web components"
+  ],
+  "files": [
+    "lib/"
   ],
   "author": {
     "name": "CJWbiu",

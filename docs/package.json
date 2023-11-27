@@ -1,0 +1,22 @@
+{
+  "name": "@pure-ui/docs",
+  "version": "0.0.1",
+  "description": "Pure UI 组件库文档",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vitepress dev",
+    "build": "vitepress build",
+    "preview": "vitepress preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "rollup-plugin-postcss-lit": "^2.1.0",
+    "vitepress": "1.0.0-rc.29"
+  },
+  "dependencies": {
+    "@pure-ui/components": "workspace:^",
+    "@pure-ui/themes": "workspace:^"
+  }
+}

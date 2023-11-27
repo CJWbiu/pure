@@ -1,0 +1,22 @@
+{
+  "name": "@pure-ui/components",
+  "version": "0.0.1",
+  "description": "一套基于Web components的UI组件库",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CJWbiu/pure.git",
+    "directory": "packages/components"
+  },
+  "author": {
+    "name": "CJWbiu",
+    "url": "https://github.com/CJWbiu"
+  },
+  "keywords": [
+    "web components",
+    "lit"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "lit": "^3.1.0"
+  }
+}
