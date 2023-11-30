@@ -8,13 +8,15 @@
 
 ```html
 <template>
-  <pu-button 
-    v-for="type in typeEnums" 
-    :key="type" 
-    :type="type"
-  > 
-    {{ type }} 
-  </pu-button>
+  <pu-space>
+    <pu-button 
+      v-for="type in typeEnums" 
+      :key="type" 
+      :type="type"
+    > 
+      {{ type }} 
+    </pu-button>
+  </pu-space>
 </template>
 
 <script setup>
@@ -27,9 +29,15 @@
 </script>
 
 <preview-box>
-  <pu-button v-for="type in typeEnums" :key="type" :type="type">
-    {{ type }}
-  </pu-button>
+  <pu-space>
+    <pu-button 
+      v-for="type in typeEnums" 
+      :key="type" 
+      :type="type"
+    >
+      {{ type }}
+    </pu-button>
+  </pu-space>
 </preview-box>
 
 ## 禁用状态
@@ -38,20 +46,24 @@
 
 ```html
 <template>
-  <pu-button disabled>default</pu-button>
-  <pu-button disabled type="primary">primary</pu-button>
-  <pu-button disabled type="dashed">dashed</pu-button>
-  <pu-button disabled type="text">text</pu-button>
-  <pu-button disabled type="link">link</pu-button>
+  <pu-space>
+    <pu-button disabled>default</pu-button>
+    <pu-button disabled type="primary">primary</pu-button>
+    <pu-button disabled type="dashed">dashed</pu-button>
+    <pu-button disabled type="text">text</pu-button>
+    <pu-button disabled type="link">link</pu-button>
+  </pu-space>
 </template>
 ```
 
 <preview-box>
-  <pu-button disabled>default</pu-button>
-  <pu-button disabled type="primary">primary</pu-button>
-  <pu-button disabled type="dashed">dashed</pu-button>
-  <pu-button disabled type="text">text</pu-button>
-  <pu-button disabled type="link">link</pu-button>
+  <pu-space>
+    <pu-button disabled>default</pu-button>
+    <pu-button disabled type="primary">primary</pu-button>
+    <pu-button disabled type="dashed">dashed</pu-button>
+    <pu-button disabled type="text">text</pu-button>
+    <pu-button disabled type="link">link</pu-button>
+  </pu-space>
 </preview-box>
 
 ## 链接按钮
@@ -60,26 +72,30 @@
 
 ```html
 <template>
-  <pu-button ghost type="link">link</pu-button>
-  <pu-button disabled type="link">link</pu-button>
-  <pu-button danger type="link">link</pu-button>
-  <pu-button href="/button.html" type="link">link</pu-button>
-  <pu-button size="xs" type="link">link</pu-button>
-  <pu-button size="s" type="link">link</pu-button>
-  <pu-button size="l" type="link">link</pu-button>
-  <pu-button size="xl" type="link">link</pu-button>
+  <pu-space>
+    <pu-button ghost type="link">link</pu-button>
+    <pu-button disabled type="link">link</pu-button>
+    <pu-button danger type="link">link</pu-button>
+    <pu-button href="/button.html" type="link">link</pu-button>
+    <pu-button size="xs" type="link">link</pu-button>
+    <pu-button size="s" type="link">link</pu-button>
+    <pu-button size="l" type="link">link</pu-button>
+    <pu-button size="xl" type="link">link</pu-button>
+  </pu-space>
 </template>
 ```
 
 <preview-box>
-  <pu-button ghost type="link">link</pu-button>
-  <pu-button disabled type="link">link</pu-button>
-  <pu-button danger type="link">link</pu-button>
-  <pu-button href="/button.html" type="link">link</pu-button>
-  <pu-button size="xs" type="link">link</pu-button>
-  <pu-button size="s" type="link">link</pu-button>
-  <pu-button size="l" type="link">link</pu-button>
-  <pu-button size="xl" type="link">link</pu-button>
+  <pu-space>
+    <pu-button ghost type="link">link</pu-button>
+    <pu-button disabled type="link">link</pu-button>
+    <pu-button danger type="link">link</pu-button>
+    <pu-button href="/button.html" type="link">link</pu-button>
+    <pu-button size="xs" type="link">link</pu-button>
+    <pu-button size="s" type="link">link</pu-button>
+    <pu-button size="l" type="link">link</pu-button>
+    <pu-button size="xl" type="link">link</pu-button>
+  </pu-space>
 </preview-box>
 
 ## 文字按钮
@@ -88,26 +104,30 @@
 
 ```html
 <template>
-  <pu-button ghost type="text">text</pu-button>
-  <pu-button disabled type="text">text</pu-button>
-  <pu-button danger type="text">text</pu-button>
-  <pu-button href="/button.html" type="text">text</pu-button>
-  <pu-button size="xs" type="text">text</pu-button>
-  <pu-button size="s" type="text">text</pu-button>
-  <pu-button size="l" type="text">text</pu-button>
-  <pu-button size="xl" type="text">text</pu-button>
+  <pu-space>
+    <pu-button ghost type="text">text</pu-button>
+    <pu-button disabled type="text">text</pu-button>
+    <pu-button danger type="text">text</pu-button>
+    <pu-button href="/button.html" type="text">text</pu-button>
+    <pu-button size="xs" type="text">text</pu-button>
+    <pu-button size="s" type="text">text</pu-button>
+    <pu-button size="l" type="text">text</pu-button>
+    <pu-button size="xl" type="text">text</pu-button>
+  </pu-space>
 </template>
 ```
 
 <preview-box>
-  <pu-button ghost type="text">text</pu-button>
-  <pu-button disabled type="text">text</pu-button>
-  <pu-button danger type="text">text</pu-button>
-  <pu-button href="/button.html" type="text">text</pu-button>
-  <pu-button size="xs" type="text">text</pu-button>
-  <pu-button size="s" type="text">text</pu-button>
-  <pu-button size="l" type="text">text</pu-button>
-  <pu-button size="xl" type="text">text</pu-button>
+  <pu-space>
+    <pu-button ghost type="text">text</pu-button>
+    <pu-button disabled type="text">text</pu-button>
+    <pu-button danger type="text">text</pu-button>
+    <pu-button href="/button.html" type="text">text</pu-button>
+    <pu-button size="xs" type="text">text</pu-button>
+    <pu-button size="s" type="text">text</pu-button>
+    <pu-button size="l" type="text">text</pu-button>
+    <pu-button size="xl" type="text">text</pu-button>
+  </pu-space>
 </preview-box>
 
 ## 高危按钮
@@ -116,20 +136,24 @@
 
 ```html
 <template>
-  <pu-button danger>default</pu-button>
-  <pu-button danger type="primary">primary</pu-button>
-  <pu-button danger type="dashed">dashed</pu-button>
-  <pu-button danger type="text">text</pu-button>
-  <pu-button danger type="link">link</pu-button>
+  <pu-space>
+    <pu-button danger>default</pu-button>
+    <pu-button danger type="primary">primary</pu-button>
+    <pu-button danger type="dashed">dashed</pu-button>
+    <pu-button danger type="text">text</pu-button>
+    <pu-button danger type="link">link</pu-button>
+  </pu-space>
 </template>
 ```
 
 <preview-box>
-  <pu-button danger>default</pu-button>
-  <pu-button danger type="primary">primary</pu-button>
-  <pu-button danger type="dashed">dashed</pu-button>
-  <pu-button danger type="text">text</pu-button>
-  <pu-button danger type="link">link</pu-button>
+  <pu-space>
+    <pu-button danger>default</pu-button>
+    <pu-button danger type="primary">primary</pu-button>
+    <pu-button danger type="dashed">dashed</pu-button>
+    <pu-button danger type="text">text</pu-button>
+    <pu-button danger type="link">link</pu-button>
+  </pu-space>
 </preview-box>
 
 ## 幽灵按钮
@@ -138,20 +162,24 @@
 
 ```html
 <template>
-  <pu-button ghost>default</pu-button>
-  <pu-button ghost type="primary">primary</pu-button>
-  <pu-button ghost type="dashed">dashed</pu-button>
-  <pu-button ghost type="text">text</pu-button>
-  <pu-button ghost type="link">link</pu-button>
+  <pu-space>
+    <pu-button ghost>default</pu-button>
+    <pu-button ghost type="primary">primary</pu-button>
+    <pu-button ghost type="dashed">dashed</pu-button>
+    <pu-button ghost type="text">text</pu-button>
+    <pu-button ghost type="link">link</pu-button>
+  </pu-space>
 </template>
 ```
 
-<preview-box>
-  <pu-button ghost>default</pu-button>
-  <pu-button ghost type="primary">primary</pu-button>
-  <pu-button ghost type="dashed">dashed</pu-button>
-  <pu-button ghost type="text">text</pu-button>
-  <pu-button ghost type="link">link</pu-button>
+<preview-box :style="{'background': '#ddd'}">
+  <pu-space>
+    <pu-button ghost>default</pu-button>
+    <pu-button ghost type="primary">primary</pu-button>
+    <pu-button ghost type="dashed">dashed</pu-button>
+    <pu-button ghost type="text">text</pu-button>
+    <pu-button ghost type="link">link</pu-button>
+  </pu-space>
 </preview-box>
 
 ## 按钮形状
@@ -160,16 +188,20 @@
 
 ```html
 <template>
-  <pu-button ghost>default</pu-button>
-  <pu-button  shape="round" type="primary">primary</pu-button>
-  <pu-button shape="circle" type="dashed">circle</pu-button>
+  <pu-space>
+    <pu-button ghost>default</pu-button>
+    <pu-button  shape="round" type="primary">primary</pu-button>
+    <pu-button shape="circle" type="dashed">circle</pu-button>
+  </pu-space>
 </template>
 ```
 
 <preview-box>
-  <pu-button danger>default</pu-button>
-  <pu-button  shape="round" type="primary">primary</pu-button>
-  <pu-button shape="circle" type="dashed">circle</pu-button>
+  <pu-space>
+    <pu-button ghost>default</pu-button>
+    <pu-button  shape="round" type="primary">primary</pu-button>
+    <pu-button shape="circle" type="dashed">circle</pu-button>
+  </pu-space>
 </preview-box>
 
 ## 按钮尺寸
@@ -178,56 +210,72 @@
 
 ```html
 <template>
-  <pu-button size="xs">xs</pu-button>
-  <pu-button size="s">s</pu-button>
-  <pu-button size="m">m</pu-button>
-  <pu-button size="l">l</pu-button>
-  <pu-button size="xl">xl</pu-button>
+  <pu-space>
+    <pu-button size="xs">xs</pu-button>
+    <pu-button size="s">s</pu-button>
+    <pu-button size="m">m</pu-button>
+    <pu-button size="l">l</pu-button>
+    <pu-button size="xl">xl</pu-button>
+  </pu-space>
 
-  <pu-button type="text" size="xs">xs</pu-button>
-  <pu-button type="text" size="s">s</pu-button>
-  <pu-button type="text" size="m">m</pu-button>
-  <pu-button type="text" size="l">l</pu-button>
-  <pu-button type="text" size="xl">xl</pu-button>
+  <pu-space>
+    <pu-button type="text" size="xs">xs</pu-button>
+    <pu-button type="text" size="s">s</pu-button>
+    <pu-button type="text" size="m">m</pu-button>
+    <pu-button type="text" size="l">l</pu-button>
+    <pu-button type="text" size="xl">xl</pu-button>
+  </pu-space>
 
-  <pu-button type="link" size="xs">xs</pu-button>
-  <pu-button type="link" size="s">s</pu-button>
-  <pu-button type="link" size="m">m</pu-button>
-  <pu-button type="link" size="l">l</pu-button>
-  <pu-button type="link" size="xl">xl</pu-button>
+  <pu-space>
+    <pu-button type="link" size="xs">xs</pu-button>
+    <pu-button type="link" size="s">s</pu-button>
+    <pu-button type="link" size="m">m</pu-button>
+    <pu-button type="link" size="l">l</pu-button>
+    <pu-button type="link" size="xl">xl</pu-button>
+  </pu-space>
 
-  <pu-button shape="circle" size="xs">xs</pu-button>
-  <pu-button shape="circle" size="s">s</pu-button>
-  <pu-button shape="circle" size="m">m</pu-button>
-  <pu-button shape="circle" size="l">l</pu-button>
-  <pu-button shape="circle" size="xl">xl</pu-button>
+  <pu-space>
+    <pu-button shape="circle" size="xs">xs</pu-button>
+    <pu-button shape="circle" size="s">s</pu-button>
+    <pu-button shape="circle" size="m">m</pu-button>
+    <pu-button shape="circle" size="l">l</pu-button>
+    <pu-button shape="circle" size="xl">xl</pu-button>
+  </pu-space>
 </template>
 ```
 
 <preview-box>
-  <pu-button size="xs">xs</pu-button>
-  <pu-button size="s">s</pu-button>
-  <pu-button size="m">m</pu-button>
-  <pu-button size="l">l</pu-button>
-  <pu-button size="xl">xl</pu-button>
+  <pu-space>
+    <pu-button size="xs">xs</pu-button>
+    <pu-button size="s">s</pu-button>
+    <pu-button size="m">m</pu-button>
+    <pu-button size="l">l</pu-button>
+    <pu-button size="xl">xl</pu-button>
+  </pu-space>
 
-  <pu-button type="text" size="xs">xs</pu-button>
-  <pu-button type="text" size="s">s</pu-button>
-  <pu-button type="text" size="m">m</pu-button>
-  <pu-button type="text" size="l">l</pu-button>
-  <pu-button type="text" size="xl">xl</pu-button>
+  <pu-space>
+    <pu-button type="text" size="xs">xs</pu-button>
+    <pu-button type="text" size="s">s</pu-button>
+    <pu-button type="text" size="m">m</pu-button>
+    <pu-button type="text" size="l">l</pu-button>
+    <pu-button type="text" size="xl">xl</pu-button>
+  </pu-space>
 
-  <pu-button type="link" size="xs">xs</pu-button>
-  <pu-button type="link" size="s">s</pu-button>
-  <pu-button type="link" size="m">m</pu-button>
-  <pu-button type="link" size="l">l</pu-button>
-  <pu-button type="link" size="xl">xl</pu-button>
+  <pu-space>
+    <pu-button type="link" size="xs">xs</pu-button>
+    <pu-button type="link" size="s">s</pu-button>
+    <pu-button type="link" size="m">m</pu-button>
+    <pu-button type="link" size="l">l</pu-button>
+    <pu-button type="link" size="xl">xl</pu-button>
+  </pu-space>
 
-  <pu-button shape="circle" size="xs">xs</pu-button>
-  <pu-button shape="circle" size="s">s</pu-button>
-  <pu-button shape="circle" size="m">m</pu-button>
-  <pu-button shape="circle" size="l">l</pu-button>
-  <pu-button shape="circle" size="xl">xl</pu-button>
+  <pu-space>
+    <pu-button shape="circle" size="xs">xs</pu-button>
+    <pu-button shape="circle" size="s">s</pu-button>
+    <pu-button shape="circle" size="m">m</pu-button>
+    <pu-button shape="circle" size="l">l</pu-button>
+    <pu-button shape="circle" size="xl">xl</pu-button>
+  </pu-space>
 </preview-box>
 
 ## Button API
