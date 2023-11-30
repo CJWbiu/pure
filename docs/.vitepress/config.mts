@@ -17,8 +17,6 @@ const COMPONENT_SIDE_ITEMS = (() => {
     });
 })();
 
-console.log(COMPONENT_SIDE_ITEMS);
-
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: 'Pure UI',
@@ -40,6 +38,13 @@ export default defineConfig({
     },
 
     socialLinks: [{ icon: 'github', link: 'https://github.com/vuejs/vitepress' }],
+  },
+  vue: {
+    template: {
+      compilerOptions: {
+        isCustomElement: tag => tag.startsWith('pu-'),
+      },
+    },
   },
   vite: {
     plugins: [postcssLit()],
