@@ -2,12 +2,13 @@
   "name": "@pure-ui/monorepo",
   "version": "0.0.1",
   "packageManager": "pnpm@8.1.1",
-  "description": "一个基于Web Component的UI组件库",
   "preinstall": "npx only-allow pnpm",
+  "private": true,
   "scripts": {
     "prepare": "husky install",
     "commit": "git cz",
     "changeset": "changeset",
+    "build": "gulp --require @esbuild-kit/cjs-loader -f ./gulpfile.js",
     "dev": "pnpm --filter @pure-ui/docs dev",
     "build:docs": "pnpm --filter @pure-ui/docs build",
     "build:themes": "pnpm --filter @pure-ui/themes build",
@@ -39,6 +40,7 @@
   "devDependencies": {
     "@changesets/cli": "^2.26.2",
     "@commitlint/cli": "^18.2.0",
+    "@esbuild-kit/cjs-loader": "^2.4.4",
     "@typescript-eslint/eslint-plugin": "^6.9.0",
     "@typescript-eslint/parser": "^6.9.0",
     "commitizen": "^4.3.0",
@@ -47,10 +49,14 @@
     "eslint": "^8.52.0",
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-prettier": "^5.0.1",
+    "fast-glob": "^3.3.2",
+    "gulp": "^4.0.2",
     "husky": "^8.0.3",
     "lint-staged": "^15.0.2",
     "prettier": "^3.0.3",
+    "rollup-plugin-esbuild": "^6.1.0",
     "rollup-plugin-postcss-lit": "^2.1.0",
-    "typescript": "^5.2.2"
+    "typescript": "^5.2.2",
+    "vite": "^5.0.4"
   }
 }

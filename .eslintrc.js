@@ -24,6 +24,7 @@ module.exports = {
       files: ['**/*.js'],
       rules: {
         '@typescript-eslint/no-var-requires': 0,
+        'no-console': 0,
       },
     },
   ],
